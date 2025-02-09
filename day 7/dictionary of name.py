@@ -2,7 +2,7 @@ def dictionary_of_name(names:list):
     s_dict = {}
 
     for letter in range(len(names)):
-        if names[letter][0].lower() == "s":
+        if names[letter].lower().startswith("s"):
             s_dict[names[letter]] = names.count(names[letter])
 
     return s_dict
