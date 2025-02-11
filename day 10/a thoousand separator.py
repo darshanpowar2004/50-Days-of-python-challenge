@@ -21,10 +21,17 @@ def convert_numbers(arr : list):
 
 
 if __name__ == "__main__":
-    num = [1000000, 2356989, 2354672, 9878098]
-    convert_numbers(num)
-    print(num)
+    numbers = [1000000, 2356989, 2354672, 9878098]
+    convert_numbers(numbers)
+    print(numbers)
 
+# best approach
+def convert_numbers(n):
+    new_list = []
+    for num in n:
+        new_list.append("{:,}".format(num)) # learning new thing
+    return new_list
+print(convert_numbers([1000000, 2356989, 2354672, 9878098]))
 
 
 
