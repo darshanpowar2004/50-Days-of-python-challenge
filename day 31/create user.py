@@ -15,7 +15,7 @@ def create_user():
         info['password'] = password
         print("User saved.Please login")
 
-    with open("data_for_create_user.py", "w") as data:
+    with open("data_for_create_user.py", "a") as data:
         data.write(f"info = {info}")
 
 def login():

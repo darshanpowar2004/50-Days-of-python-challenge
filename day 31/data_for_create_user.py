@@ -1,1 +1,1 @@
-info = {'name': 'darshan', 'age': 20, 'password': 'bro20'}
+info = {}
